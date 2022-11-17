@@ -1,0 +1,77 @@
+Vamos primero a la carpeta inicial del webpack
+
+npm init
+
+le ponemos un nombre por ejemplo: webpack-inicial
+version y damos enter
+descripción y damos enter
+
+entry point lo dejamos enter
+test enter
+repositorio git y damos enter
+keywords: enter
+author 
+y le damos enter
+
+se va crear el package.json
+
+crear carpeta src
+
+
+npm install webpack webpack-cli --save-dev
+
+
+en scripts dentro del package.json
+ "build" : "webpack"
+
+
+despues
+npm run build
+
+se genera el dist
+
+https://webpack.js.org/configuration/
+
+
+webpack.config.js
+module.exports = {
+    mode: 'development',
+    module: {
+        rules: []
+    },
+    optimization: {},
+    plugins: [],
+}
+
+
+https://webpack.js.org/plugins/html-webpack-plugin/
+
+https://webpack.js.org/loaders/html-loader/
+
+npm install --save-dev html-loader
+
+npm install --save-dev html-webpack-plugin
+
+
+modificamos el webpack.config.js 
+con las rules
+
+
+para desarrollo el server
+npm i -D webpack-dev-server
+
+
+https://webpack.js.org/loaders/css-loader/
+
+
+https://webpack.js.org/loaders/style-loader/
+https://webpack.js.org/plugins/mini-css-extract-plugin/
+
+https://v4.webpack.js.org/loaders/file-loader/
+
+https://webpack.js.org/plugins/copy-webpack-plugin/
+
+
+npm i -D css-minimizer-webpack-plugin terser-webpack-plugin
+
+https://babeljs.io/
